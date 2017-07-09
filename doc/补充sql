@@ -1,0 +1,7 @@
+ALTER TABLE `jydp_comment_data_1` ADD `appcontent` TEXT NOT NULL AFTER `content`
+
+ALTER TABLE `jydp_withdrawals` ADD `ali_account` VARCHAR( 30 ) NOT NULL COMMENT '支付宝账号' AFTER `nickname`
+
+ALTER TABLE `jydp_withdrawals` ADD `ali_username` VARCHAR( 30 ) NOT NULL COMMENT '支付宝实名' AFTER `ali_account`
+
+ALTER TABLE `jydp_poster` ADD `status` INT NOT NULL DEFAULT '0' COMMENT '状态：0待审核1已审核' AFTER `listorder`
